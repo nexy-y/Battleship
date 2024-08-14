@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BattleDorge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title">https://battledorge</div>
+            <div class="window-controls">
+                <span class="minimize">_</span>
+                <span class="close">X</span>
+            </div>
+        </div>
+
+        
+        <div class="main-container" id="betting-screen">
+            <div class="coin-container">
+                <button class="minus">-</button>
+                <div class="coin">
+                    <img src="coin.png" alt="Doge Coin">
+                </div>
+                <button class="plus">+</button>
+            </div>
+            <input type="text" class="input-field" placeholder="$DORGE amount">
+            <button class="start-button">Start</button>
+        </div>
+
+        <div class="main-container" id="game-screen" style="display: none;">
+            <div class="grid-container">
+                <canvas id="battleship-canvas" width="400" height="400"></canvas>
+            </div>
+            <div id="game-message"></div>
+            <button id="end-round-button" style="display: none;">End Round</button>
+        </div>
+       
+        
+        <canvas id="rocket-canvas"></canvas>
+
+        
+        <div class="main-container" id="game-screen" style="display: none;">
+        <div class="grid-container">
+            <canvas id="battleship-canvas" width="400" height="400"></canvas>
+        </div>
+        <div id="game-message"></div>
+            <button id="end-round-button" style="display: none;">End Round</button>
+            <button id="restart-button" style="display: none;">Restart</button>
+        </div>
+
+        <audio id="background-music" src="background-music.mp3" autoplay loop></audio>
+
+    <script src="script.js"></script>
+    <script src="animations.js"></script>
+</body>
+
+</html>
